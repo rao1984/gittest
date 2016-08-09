@@ -14,6 +14,7 @@ public class GetUsers {
 	    	ApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
 	    	UserManager userManager = (UserManager) ctx.getBean("userManagerImpl");
 	    	
+	    	//commit test
 	    	User user = new User();
 	    	user.setUsername("johndoe");
 	    	user.setName("John Doe");
