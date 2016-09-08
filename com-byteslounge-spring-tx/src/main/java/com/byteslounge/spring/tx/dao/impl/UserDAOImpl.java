@@ -29,9 +29,15 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	@Transactional(readOnly=true,propagation=Propagation.NOT_SUPPORTED)
+	@Transactional(readOnly=true)
 	public User getUserById(Long userId) {
 	//	throw new RuntimeException("");
+		try {
+			Thread.sleep(20000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return (User) sessionFactory.getCurrentSession().get(User.class, userId);
 	}
 	

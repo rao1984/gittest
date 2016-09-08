@@ -29,6 +29,7 @@ public class MyAspect implements Ordered {
 	   @Around("execution(* com.byteslounge.spring.tx.user.impl.UserManagerImpl.insertUser(..) )")
 	   public Object doConcurrentOperation(ProceedingJoinPoint pjp) throws Throwable { 
 	      int numAttempts = 0;
+	      System.out.println("myas");
 	      PessimisticLockingFailureException lockFailureException;
 	      do {
 	         numAttempts++;
