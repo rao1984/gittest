@@ -11,6 +11,8 @@ import com.byteslounge.spring.tx.user.UserManager;
 public class GetUsers {
 	 public static void main( String[] args )
 	    {
+	    	
+	    	
 	    	ApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
 	    	UserManager userManager = (UserManager) ctx.getBean("userManagerImpl");
 	    	
