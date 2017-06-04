@@ -16,7 +16,7 @@ public class Person {
 	@Column(name="USERNAME", nullable = false)
 	private String username;
 	
-	@Column(name="NAME", nullable = false)
+	@Column(name="NAME", nullable = true)
 	private String name;
 	private Integer age;
 	public Long getId() {
