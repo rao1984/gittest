@@ -41,6 +41,9 @@ public class Main
     	
     	System.out.println("\nUser list fetched!"
         	+ "\nUser count: " + users.size());
+    	System.out.println("\nUser list fetched!"
+            	+ "\nUser count: " + users.size());
+
 
     }
 }
